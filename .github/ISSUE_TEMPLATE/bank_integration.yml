@@ -1,0 +1,68 @@
+name: Bank or wallet integration request
+description: Request support for a Pakistani bank or wallet provider.
+title: "[Bank integration]: "
+labels:
+  - bank-integration
+  - triage
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Before you submit
+
+        **First forward a relevant payment notification email to info@umar.is-a.dev, then submit this request.**
+
+        Send only a legitimate sample needed to understand the notification format. Redact account numbers, IBANs, balances, addresses, phone numbers, CNICs, OTPs, credentials, and other personal or financial information wherever possible. Never send passwords, API keys, or login links.
+
+        Email forwarding does not guarantee integration or automatic payment verification. Notification emails can be delayed, duplicated, incomplete, or spoofed.
+  - type: input
+    id: provider
+    attributes:
+      label: Bank or wallet name
+      description: Which provider should Pakpays consider supporting?
+      placeholder: e.g. Bank name or wallet provider
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Provider type
+      options:
+        - Bank
+        - Mobile wallet
+        - Payment service / gateway
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: use_case
+    attributes:
+      label: What should the integration support?
+      description: Describe the payment notification or merchant workflow you want to support.
+    validations:
+      required: true
+  - type: dropdown
+    id: email_forwarded
+    attributes:
+      label: Have you forwarded a redacted sample email to info@umar.is-a.dev?
+      options:
+        - "Yes"
+        - "Not yet"
+    validations:
+      required: true
+  - type: textarea
+    id: sample_notes
+    attributes:
+      label: Notes about the sample email
+      description: Do not paste an unredacted email or sensitive transaction data here. Share only sanitized, non-sensitive notes.
+    validations:
+      required: false
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Privacy and verification acknowledgement
+      options:
+        - label: I have removed or avoided sharing passwords, OTPs, full account identifiers, and other sensitive personal or financial data.
+          required: true
+        - label: I understand that a provider request does not guarantee support or automatic verification, and that email notifications alone are not authoritative proof of settlement.
+          required: true
