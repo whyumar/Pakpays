@@ -1,0 +1,55 @@
+name: General request
+description: Suggest a feature, improvement, or change to Pakpays.
+title: "[Request]: "
+labels:
+  - enhancement
+  - triage
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve Pakpays. Keep the request focused and do not include secrets, customer data, bank statements, or unredacted payment emails.
+  - type: dropdown
+    id: request_type
+    attributes:
+      label: Request type
+      options:
+        - New feature
+        - Improvement to an existing feature
+        - Documentation
+        - Developer experience
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem should this solve?
+      description: Describe the use case or pain point.
+      placeholder: I am trying to...
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: What would you like to happen?
+      description: Describe your suggested solution.
+      placeholder: It would help if Pakpays could...
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Any alternative approaches or workarounds?
+    validations:
+      required: false
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Confirmation
+      options:
+        - label: I have checked that a similar request has not already been opened.
+          required: true
+        - label: I have not included passwords, API keys, private customer data, or sensitive financial information.
+          required: true
