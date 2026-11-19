@@ -7,7 +7,8 @@
 
 <p align="center">
   <a href="https://github.com/whyumar/Pakpays/issues">Issues</a> ·
-  <a href="https://github.com/whyumar/Pakpays/issues/new/choose">Request an improvement</a> ·
+  <a href="https://github.com/whyumar/Pakpays/issues/new/choose">Request an improvement</a> .
+  <a href="https://github.com/whyumar/Pakpays/issues/new/choose">Request a Bank</a> .
   <a href="mailto:info@umar.is-a.dev">Contact</a>
 </p>
 
