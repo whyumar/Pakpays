@@ -12,9 +12,9 @@ body:
 
         **First forward a relevant payment notification email to info@umar.is-a.dev, then submit this request.**
 
-        Send only a legitimate sample needed to understand the notification format. Redact account numbers, IBANs, balances, addresses, phone numbers, CNICs, OTPs, credentials, and other personal or financial information wherever possible. Never send passwords, API keys, or login links.
+        Ap ke bank account puri trah secured 🔐 rahe ga, Q K hum email se payments verify krte hai is liye, email chye ke bank ka email or un ka funds ka email hamara system parh sake. Apki sari details safe rahe gi or use nai ki jayienge Thanks.
 
-        Email forwarding does not guarantee integration or automatic payment verification. Notification emails can be delayed, duplicated, incomplete, or spoofed.
+      
   - type: input
     id: provider
     attributes:
