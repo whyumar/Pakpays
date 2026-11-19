@@ -2,7 +2,7 @@
 
 <p align="center">
   <strong>A clearer way for Pakistani businesses to accept and reconcile digital payments.</strong><br />
-  Open-source project · Pakistan-focused · Built for merchant workflows
+  Public project · Community hub · Pakistan-focused
 </p>
 
 <p align="center">
@@ -39,28 +39,13 @@ The project brings together a merchant-facing API, hosted checkout, bank-alert p
 5. The order is reconciled only according to configured provider-specific verification rules; uncertain cases remain for review.
 6. Pakpays sends a signed webhook to the merchant's configured endpoint when applicable.
 
-## Quick start
+## Using Pakpays
 
-### Requirements
+This repository is the **public project page and community hub** for Pakpays. The application source code and deployment configuration are maintained separately in a private repository, so cloning this public repository will not install or run the Pakpays application.
 
-- Node.js (use the version declared by the project configuration)
-- A Supabase project for authentication and PostgreSQL
-- A Gmail mailbox configured for notification ingestion, if you use that feature
-- The environment variables required by your deployment
+If you are a merchant interested in using Pakpays, contact [info@umar.is-a.dev](mailto:info@umar.is-a.dev) to ask about access and onboarding. API access, credentials, and the correct service URL are provided to authorized integrations directly; they are not published in this repository.
 
-### Run locally
-
-~~~bash
-git clone https://github.com/whyumar/Pakpays.git
-cd Pakpays
-npm install
-cp .env.example .env.local
-npm run dev
-~~~
-
-Open http://localhost:3000.
-
-The commands assume the repository includes an .env.example file. If it does not, create .env.local using the variable names documented in the expandable configuration section. Never commit real credentials.
+If you are here to follow development, suggest an improvement, report a problem, or request support for a bank or wallet, use the issue forms linked below.
 
 ## Merchant API
 
@@ -169,21 +154,11 @@ Provider support and verification behavior can change as integrations are tested
 </details>
 
 <details>
-<summary><strong>Environment configuration</strong></summary>
+<summary><strong>Deployment and configuration</strong></summary>
 
-Configure secrets in your local environment file or deployment provider's secret manager. Never commit real values.
+The application source code and production configuration are maintained in a separate private repository. This public repository intentionally does not provide clone instructions, a local development setup, environment files, or deployment secrets.
 
-Variable names used by the application may include:
-
-- NEXT_PUBLIC_SUPABASE_URL
-- NEXT_PUBLIC_SUPABASE_ANON_KEY
-- SUPABASE_SECRET_KEY
-- Encryption key configuration
-- Merchant/API key configuration
-- Webhook signing secret configuration
-- Gmail IMAP connection credentials and mailbox configuration
-
-Check the source code for the exact required names, formats, and validation rules for the version you deploy. Do not copy credentials from screenshots, logs, email messages, or another environment into a public issue.
+For implementation or deployment access, contact [info@umar.is-a.dev](mailto:info@umar.is-a.dev). Never request or share credentials, private configuration, or customer payment data in public issues.
 
 </details>
 
