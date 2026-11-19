@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security vulnerability
+    url: https://github.com/whyumar/Pakpays/security/advisories/new
+    about: Please report security vulnerabilities privately, not in a public issue.
+  - name: General questions
+    url: mailto:info@umar.is-a.dev
+    about: For private questions that are not bug reports or feature requests.
